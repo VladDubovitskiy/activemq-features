@@ -1,0 +1,33 @@
+server:
+  port: 8889
+
+broker:
+  activemq:
+    broker-url: tcp://localhost:61616
+    user: admin
+    password: admin
+
+logging:
+  level:
+    com:
+      epam:
+        dubovitskiy:
+          activemqfeatures:
+            jms:
+              impl: INFO
+
+topics:
+  topic: topic
+  durable-topic: durable-topic
+
+virtual:
+  topic: VirtualTopic.MAIN
+
+sync-communication:
+  request-queue: sync.requestQueue
+  reply-queue: sync.replyQueue
+
+
+
+
+
